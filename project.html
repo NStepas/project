@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,wght@1,200&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Gideon+Roman&family=Roboto+Serif:ital,wght@1,200&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <form name="data" id="formElem">
+        <div class="main-div" id="row_0"></div>
+        <div class="first_name_case"><label for="first_name">First name</label>
+            <input onchange="checkTypeOfName()" type="text" class="in" name="firstName" id="firstName">
+        </div>
+        <div class="second_name_case"><label for="second_name">Second name</label>
+            <input onchange="checkTypeOfName()" type="text" class="in" name="secondName" id="secondName">
+        </div>
+        <div class="age_case"><label for="age">Age</label>
+            <input onchange="checkTypeOfAge()" type="text" name="age" class="in" id="age">
+        </div>
+        <div class="type_of_abonement_case" id="type_of_abonement_case">
+            <label for="type_of_abonement">Type of abonement</label>
+            <select id="type_of_abonement" name="abonement">
+                <option disabled selected value>Choose type of abonement</option>
+                <option value="all_day">All day</option>
+                <option value="morning">Morning</option>
+                <option value="evening">Evening</option>
+            </select>
+        </div>
+        <div class="showAllClients">
+            <button type="button" class="showAllClients" onclick="showAllClients()">Show all</button>
+        </div>
+       
+        <div class="button_case"><input id="but" type="button" class="button" value="Submit" onclick="toObject()"></div>
+        <!-- <div class="clientDelete">
+                <input placeholder="input index of client for delete" name="clientIndex" type='number' class="clientDelete" value="">
+            <button type="button" class="client-delete" onclick="deleteClient()">Remove</button> 
+        </div> -->
+    </div>
+    </form>
+
+    
+    <!-- <div class="clientDelete"> 
+        <input class="clientDelete" placeholder="choose name of clien for delete" name="clientDelete" type="text" value="">
+        <button type="button" class="clientDelete" id="clientDelete" onclick="clienDelete()">Delete</button>
+    </div> -->
+    <div class="others"></div>
+
+<!-- <script>
+    let literals = `hello`;
+    let finalText = `Everione: ${(literals)}`; 
+    document.getElementsById("other").innerHTML = finalText;
+ </script> -->
+
+    <p class='p1'></p>
+<script src="project.js"></script>
+</body>
+</html>
